@@ -211,13 +211,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .title_pattern {
 	background: url(../images/pattern_title.gif) repeat-x left center;
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 }
 
 .title_pattern span {
 	background: #fff;
-	padding: 0 20px
+	padding: 0 30px
 }
 
 .pagetitle {
