@@ -485,9 +485,7 @@ ft offset of submenus need to match (see below) */
 
 .sf-menu li:hover {
 	visibility: inherit;
-/
-
-* fixes IE7 'sticky bug' */
+/* fixes IE7 'sticky bug' */
 }
 
 .sf-menu li {
@@ -518,9 +516,7 @@ ul.sf-menu li.sfHover li ul {
 ul.sf-menu li li:hover ul,
 ul.sf-menu li li.sfHover ul {
 	left: 10em;
-	/
-
-* match ul width */
+	/* match ul width */
 	top: -1px;
 	margin-left: 0px;
 }
@@ -533,9 +529,7 @@ ul.sf-menu li li.sfHover li ul {
 ul.sf-menu li li li:hover ul,
 ul.sf-menu li li li.sfHover ul {
 	left: 10em;
-	/
-
-* match ul width */
+	/* match ul width */
 	top: -1px;
 }
 
