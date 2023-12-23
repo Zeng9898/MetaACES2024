@@ -1,0 +1,7 @@
+#map {
+    height: 400px;
+    width: 800px;
+    /* set boundary for the map */
+    margin-bottom: 20px;
+    padding: 0px;
+}

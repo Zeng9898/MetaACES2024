@@ -12,6 +12,7 @@
 <!-- ////////////////////////////////// -->
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 <link href="styles/inner.css" rel="stylesheet" type="text/css" />
+<link href="styles/map.css" rel="stylesheet" type="text/css" />
 <!--[if lt IE 9]>
 <link href="styles/ie8.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -22,7 +23,9 @@
 <script type="text/javascript" src="js/hoverIntent.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
 <script type="text/javascript">
+  
 jQuery(document).ready(function(){
 	//Menu
 	jQuery("ul.sf-menu").supersubs({ 
@@ -93,7 +96,9 @@ jQuery(document).ready(function(){
       <div id="main">
         <div id="maincontent">
             <h3> Accommodation </h3>
-            <img src="image/Hotel map.png" width="120%" alt="" /><br>
+            <div id="map"></div>
+            <!-- <img src="image/Hotel map.png" width="120%" alt="" /><br> -->
+            <t2><a href="https://zhongli.hubhotel.com.tw/" target="_blank">Hub Hotel</a></t2><br>
             <t2><a href="https://www.hotelin.com.tw/?lang=en" target="_blank">Hotel IN</a></t2><br>
             <t2><a href="http://taoyuan.hotel-j.com.tw/en/" target="_blank">Hotel-J-Taoyuan</a></t2><br>
             <t2><a href="https://www.kuva-chateau.com.tw/" target="_blank">Hotel Kuva Chateau</a></t2><br>
@@ -131,6 +136,6 @@ jQuery(document).ready(function(){
   <!-- end #container --> 
 </div>
 <!-- end #outer-container -->
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABL8RJfIefhPE84jtAJaLDU1h3bV1J8YU&libraries=places&callback=initMap&v=weekly"></script>
 </body>
 </html>
