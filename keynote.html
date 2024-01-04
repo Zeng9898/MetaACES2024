@@ -1,322 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="shortcut icon" href="images/favicon.ico" />
-<meta charset="UTF-8" />
-<meta name="keywords" content="MetaACES 2022, metaverse2022" />
-<meta name="description" content="International Workshop on Metaverse and Artificial Companions in Education and Society 2022" />
-<!--meta name="google-site-verification" content="S8uGH3fuPFBxndVemGH_23bfQj0hKsFll2BcQMuHX-E" /-->
-<title>MetaACES</title>
-<!-- ////////////////////////////////// -->
-<!-- //      Start Stylesheets       // -->
-<!-- ////////////////////////////////// -->
-<link href="styles/style.css" rel="stylesheet" type="text/css" />
-<link type="text/css" href="styles/skitter.styles.css" media="all" rel="stylesheet" />
-<!--[if lt IE 9]>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="MetaACES 2022, metaverse2022" />
+	<meta name="description"
+		content="International Workshop on Metaverse and Artificial Companions in Education and Society 2022" />
+	<!--meta name="google-site-verification" content="S8uGH3fuPFBxndVemGH_23bfQj0hKsFll2BcQMuHX-E" /-->
+	<title>MetaACES</title>
+	<!-- ////////////////////////////////// -->
+	<!-- //      Start Stylesheets       // -->
+	<!-- ////////////////////////////////// -->
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="styles/skitter.styles.css" media="all" rel="stylesheet" />
+	<!--[if lt IE 9]>
 <link href="styles/ie8.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<!-- ////////////////////////////////// -->
-<!-- //      Javascript Files        // -->
-<!-- ////////////////////////////////// -->
-<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
-<script type="text/javascript" src="js/jquery.skitter.js"></script>
-<script type="text/javascript" src="js/hoverIntent.js"></script>
-<script type="text/javascript" src="js/superfish.js"></script>
-<script type="text/javascript" src="js/supersubs.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function(){
-	//Menu
-	jQuery("ul.sf-menu").supersubs({ 
-	minWidth		: 12,		// requires em unit.
-	maxWidth		: 27,		// requires em unit.
-	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
-						   // due to slight rounding differences and font-family 
-	}).superfish();  // call supersubs first, then superfish, so that subs are 
-					 // not display:none when measuring. Call before initialising 
-					 // containing tabs for same reason.
-					 
-	jQuery(document).ready(function() {
-		jQuery(".box_skitter_large").skitter({
-			animation: "fade",
-			interval: 6000,
-			numbers: false, 
-			numbers_align: "right", 
- 			hideTools: true,
-			controls: false,
-			focus: false,
-			focus_position: true,
-			width_label:'auto', 
-			enable_navigation_keys: true,   
- 			progressbar: false
+	<!-- ////////////////////////////////// -->
+	<!-- //      Javascript Files        // -->
+	<!-- ////////////////////////////////// -->
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="js/jquery.skitter.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/supersubs.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			//Menu
+			jQuery("ul.sf-menu").supersubs({
+				minWidth: 12,		// requires em unit.
+				maxWidth: 27,		// requires em unit.
+				extraWidth: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+				// due to slight rounding differences and font-family 
+			}).superfish();  // call supersubs first, then superfish, so that subs are 
+			// not display:none when measuring. Call before initialising 
+			// containing tabs for same reason.
+
+			jQuery(document).ready(function () {
+				jQuery(".box_skitter_large").skitter({
+					animation: "fade",
+					interval: 6000,
+					numbers: false,
+					numbers_align: "right",
+					hideTools: true,
+					controls: false,
+					focus: false,
+					focus_position: true,
+					width_label: 'auto',
+					enable_navigation_keys: true,
+					progressbar: false
+				});
+			});
+
 		});
-	});				  
-					 
-});
-</script>
+	</script>
 </head>
+
 <body>
-<div id="outer-container">
-	<div id="container">
-   	  <div id="top">
-      <div id="logo"><a href="index.html"><img src="image/logo.png" alt=""  /></a></div>
-      <!-- end #logo -->
-      <div id="nav">
-		<ul id="topnav" class="sf-menu">
-	   <li><a href="index.html">Home</a></li>
-	   <li><a href="about-us.html">About US</a>
-		 <ul>
-				 <li><a href="https://www.eduhk.hk/metaaces2022/index.html">MetaACES 2022 Jun</a> </li>
-				 <li><a href="https://www.eduhk.hk/metaaces2022NovICCE2022/index.html">MetaACES 2022 Nov</a> </li>
-				 <li><a href="https://www.eduhk.hk/metaaces2023/index.html">MetaACES 2023 Jun</a> </li>
-			   </ul>
-			 </li>
-	   <li><a href="call-for-paper.html">Call For Papers</a> </li>
-	   <li><a href="agenda.html">Programme</a>
-		 <ul>
-				 <li><a href="keynote.html">keynote</a> </li>
-				 <li><a href="seminar.html">Seminar</a> </li>
-				 <li><a href="workshop.html">Workshop</a> </li>
-			   </ul>
-			 </li>
-	   <!--li><a href="keynote.html">Keynote Speech</a></li-->
-	   <li><a href="reg.html">Registration</a></li>
-	   <li><a href="location.html">Venue</a>
-		 <ul>
-		   <li><a href="accommodation.html">ACCOMMODATION</a> </li>
-		   <li><a href="https://www.ncu.edu.tw/en/pages/show.php?top=1&num=56" target="_blank" style="display: block;">TRANSPORTATION to NCU</a> </li>
-		   <li><a href="https://eng.taiwan.net.tw/m1.aspx?sNo=0002107" target="_blank" style="display: block;" class="current">TRAVEL INFORMATION</a> </li>
-		 </ul>
-	   </li>
-	 </ul>
-       	  <!-- #topnav -->
-   	    </div>
-       	<!-- #nav -->	
-        </div><!-- end #top -->
-    
+	<div id="outer-container">
+		<div id="container">
+			<div id="top">
+				<div id="logo"><a href="index.html"><img src="image/logo.png" alt="" /></a></div>
+				<!-- end #logo -->
+				<div id="nav">
+					<ul id="topnav" class="sf-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About US</a>
+							<ul>
+								<li><a href="https://www.eduhk.hk/metaaces2022/index.html">MetaACES 2022 Jun</a> </li>
+								<li><a href="https://www.eduhk.hk/metaaces2022NovICCE2022/index.html">MetaACES 2022
+										Nov</a> </li>
+								<li><a href="https://www.eduhk.hk/metaaces2023/index.html">MetaACES 2023 Jun</a> </li>
+							</ul>
+						</li>
+						<li><a href="call-for-paper.html">Call For Papers</a> </li>
+						<li><a href="agenda.html">Programme</a>
+							<ul>
+								<li><a href="keynote.html">keynote</a> </li>
+								<li><a href="seminar.html">Seminar</a> </li>
+								<li><a href="workshop.html">Workshop</a> </li>
+							</ul>
+						</li>
+						<!--li><a href="keynote.html">Keynote Speech</a></li-->
+						<li><a href="reg.html">Registration</a></li>
+						<li><a href="location.html">Venue</a>
+							<ul>
+								<li><a href="accommodation.html">ACCOMMODATION</a> </li>
+								<li><a href="https://www.ncu.edu.tw/en/pages/show.php?top=1&num=56" target="_blank"
+										style="display: block;">TRANSPORTATION to NCU</a> </li>
+								<li><a href="https://eng.taiwan.net.tw/m1.aspx?sNo=0002107" target="_blank"
+										style="display: block;" class="current">TRAVEL INFORMATION</a> </li>
+							</ul>
+						</li>
+					</ul>
+					<!-- #topnav -->
+				</div>
+				<!-- #nav -->
+			</div><!-- end #top -->
 
 
-		        
-		       <div id="header" class="innerpage">
+
+
+			<div id="header" class="innerpage">
 				<div class="shadow"></div>
-				
+
 				<div class="container940">
 					<h1 class="pagetitle">Keynote</h1>
-					
-					<div class="pagedesc">The 2nd International Conference on Metaverse and Artificial Companions in Education and Society</div>					
+
+					<div class="pagedesc">The 2nd International Conference on Metaverse and Artificial Companions in
+						Education and Society</div>
 					<div class="clear"></div><!-- clear float -->
 				</div><!-- end container940 -->
 			</div>
 			<!-- end #header -->
-		 		  
-		    <!-- end #before-content -->
-		    	 	        
-              <div id="content" class="withsidebar">
-			  <div id="main">
-				<div id="maincontent">
-					<strong><h5 class="morespace"><a id="k1"></a></strong></h5>
-					<strong><h5 class="morespace"></strong></h5>
-				  <h4><strong>Keynote Speakers </strong></h4>
-				  <div class="separator small"></div>
-				          <div class="one_half firstcols">
-         <a href="#1"><img src="image/org/Prof_Tak-Wai_Chan.png" alt="" class="alignleft frame" width="120" height="120"/>
-                        <div class="org-name">Professor Tak-Wai Chan</div>                        
-                      <div class="org-uni">Chair Professor,<br> National Central University</div></a>
 
-        </div>
-                <div class="one_half lastcols">
-        <a href="#2"><img src="image/org/Dede.jpg" alt="" class="alignleft frame" width="120" height="120"/>
-                        <div class="org-name">Professor Christopher Dede</div>                        
-                      <div class="org-uni">Senior Research Fellow, <br>Graduate School of Education,<br> Harvard University</div></a>
-                      
-        </div>
-        <div class="separator small"></div>
-        <a id="1" name="1"></a>
-        <div class="separator line"></div>
-        
-<h3><strong><div style="color:purple">Speech Title: Invitation to Establish Seamless Interest-Driven Creator Theory <br>  
- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  —— questions and its implications to MetaACES research</strong></h3>
-					 <div class="separator small"></div>
-				  
-				  <h5 class="one_third"><strong>Professor Tak-Wai Chan</strong></h5>
-					<p class="two_third lastcols">Chair Professor,<br> National Central University</p>					
-				    <h6 class="morespace" style="text-align: justify;"><strong><span class="tab-content"><img src="image/org/Prof_Tak-Wai_Chan.png" alt="" class="alignleft frame" width="188" /></span><br>&nbsp;<br>
-				  <h5>Speaker Bio</strong></h5>
-					Professor Tak-Wai Chan is a trailblazer in digital learning and a global leader in the field. Almost 40 years ago, at a time when computers and the internet were not yet mainstream in the mid-eighties, he began researching on AI supported learning for his doctoral dissertation, proposing a new genus of AI in education system called learning companion system in 1988. This virtual companion system, called Integration-Kid, was the first artificial companion in the world. In 1989, he and his students started to build the world's first dedicated networked learning system for collaborative learning and learning through competition games, called Distributed West (1992). In early 2000s, he and his colleagues built the largest online learning community called EduCity (1.5 million learners with 1,700 schools involved in 2003), which was also referred as the first learning society in the world. In the same time period, his team conducted frontier research on mobile learning, intelligent classroom, future classroom, interactive clicker, e-schoolbag, one-to-one technology enhanced learning, and so forth. After this series of research, in 2006, working together with a large group of international researchers mainly from the Western countries, he proposed the concept of Seamless Learning. In 2010s, after some long-term experiments on reading (MSSR) and writing in one-to-one technology enhanced classroom, in collaboration with a group of Asian scholars, he proposed the Interest-Driven Creator (IDC) Theory. Again, he is now calling for an international researcher team to build the Seamless Interest-Driven Creator (SIDC) Theory.<br><br>
-					In addition to his research, Professor Chan has also been a major founder of two societies: the Asia-Pacific Society for Computers in Education (APSCE) and the Global Chinese Society for Computers in Education (GCSCE). These two societies respectively host annual conference series ICCEs and GCCCEs, as well as the journals RPTEL and JLCE. Moreover, to cope with the expanding research community of the field, he has been assisting the establishment of APSCE Theme-Based International Conference Series (TBICS), including CTE-STEM, ICFULL, MetaACES.<br><br>
-					Throughout his career, Professor Chan has received numerous recognitions and academic awards, including the National Chair Professorship Award in 2020, the Executive Yuan Award for Outstanding Science and Technology Contribution in 2019, the Fellow of APSCE in 2019, the Academic Award of the Ministry of Education in 2013, the Pan Wen Yuan Foundation Outstanding Research Award in 2009, and the Chinese Foundation Award from the National Science Council in 2003. Besides being National Chair Professor, he has also held several distinguished positions, including Chair Professor at NCU since 2008, Distinguished Professor at NCU from 2004 to 2008, Excellent Appointed Researcher at the National Science Council in 2008, and Appointed Researcher at the National Science Council from 2000 to 2007. Additionally, he has received Excellent Research Awards from the National Science Council for the years 1995-1996, 1997-1998, and 1999-2000.<br><br>
-					Throughout his career, Professor Chan has received numerous recognitions and academic awards: the National Chair Professorship Award in 2020, the Executive Yuan Award for Excellent Science and Technology Contribution in 2019, the Fellow of APSCE in 2019, the Pan Wen Yuan Foundation Excellent Researcher Award in 2009, among others.
-					 <div class="separator"></div>
-					 
-				    <h5><strong>Abstract</strong></h5>
-					<h6 class="morespace" style="text-align: justify;">Human lifespan is extended, but COVID-19 global death toll has exceeded 8 million (Our World in Data, 2023); digitization enables all of us to connect and communicate, but we constantly quarrel over different beliefs; online games immerse players, but children's addiction may become a learning disaster; artificial companions (such as chatbots and robots) can do various kinds of work for us, but they also replace many of our jobs; the advent of metaverse may represent a bright future world, but it may also signal a dark abyss to come; artificial intelligence can improve human life in the future, but it can also do stupid things to human beings; we cheer for technological progress, but we worry about climate change, natural resource depletion, environmental pollution, wealth disparity and other problems.<br><br>
-                    The world is on the brink of peril. Shall we live in harmony with the world around us? What is the future of human wellbeing? What role can education play? Mandela said: “Education is the most powerful weapon which you can use to change the world.” Education is the hope of the future. The destiny of all human beings in the future is decided by today's education. In 2040, in their 30s, the current primary and secondary school students will be the pillars of our society. <br><br>
-                    On the other hand, progress of digital technology, such as metaverse and artificial companions, accelerates, with its impacts in the next 10 years several times as that of last 10 years’. Designing future education is designing the future world.<br><br>
-                    In 2006, 17 international researchers, mainly from Asia, Europe, and North America, published a paper on the concept of seamless learning that holistically describes future learning environment (Chan et al., 2006). Seamless learning is based on three other concepts: (1) one-to-one (1:1) technology enhanced learning, (2) learning scenarios, and (3) seamless learning space. Seamless learning spells out the continuality of learning experience while students switching from one scenario to another easily and quickly. Subsequently, the concept triggered abundant research (Looi et al., 2010; Wong & Looi, 2011).<br><br>
-                    Starting from 2018, 12 years after the publication of seamless learning concept, 23 Asian researchers collaborated and published a series of papers on Interest-Driven Creator Theory (IDC Theory) (Chan et al., 2018; Chan et al., 2019; Wong et al., 2020; Chen et al., 2020). This effort stemmed from the fact that a considerable part of Asian education remains examination-driven. The overemphasis on examination outcome distorts the processes of learning and teaching, ruinate students’ interest in learning, undermine the need of developing twenty-first century competencies, and fails to prepare our next generation to face the future unpredictable world. Yet, high-stakes examinations will not disappear in the foreseeable future. To lessen their drawbacks and guide the design of future learning, IDC Theory is developed.<br><br>
-                    Seamless learning speaks of future technology supported learning environment while IDC Theory focuses on learning activity design. It is noticeable that integration of them will simply form a theory about continuity of IDC-based learning in the future seamless learning space, and we shall call this Seamless IDC Theory (or SIDC Theory).<br><br>
+			<!-- end #before-content -->
 
-                    This talk intends to call for establishing SIDC Theory through collective endeavor by interested researchers. Besides, this talk also raises questions to be considered in building the theory:<br><br>
-                    1.	How to develop a broad framework of SIDC Theory that can capture critical elements of the theory?<br><br>
-                    2.	Will there be extension of seamless learning per se as well as that of IDC Theory per se in view of SIDC Theory and the digital future?<br><br>
-                    3.	What is the ‘global educational goal’ that educators around the world should strive for? If so, will SIDC-based learning (or SIDC learning) contribute to the global educational goal?<br><br>
-                    4.	In the ‘seamless world’ of the digital future, will there be SIDC work, SIDC family life, SIDC entertainment, and so forth, besides SIDC learning? Or will there be SIDC daily life?<br><br>
-                    Besides, this talk will also discuss some implications of SIDC Theory to MetaACES research.    
-                     </h6><div class="separator"></div>
-					 
-					 
-					 <a id="2" name="2"></a>
-					   <div class="separator line"></div>
-					    
-					 <h3><strong><div style="color:purple">Speech Title: If the Metaverse is the Answer, What is the Question?</strong></h3>
-					 <div class="separator small"></div>
-						
-					 <h5 class="one_third"><strong>Professor Christopher Dede</strong></h5>
-					<p class="two_third lastcols">Senior Research Fellow, <br>Graduate School of Education,<br> Harvard University</p>					
-				    <h6 class="morespace" style="text-align: justify;"><strong><span class="tab-content"><img src="image/org/Dede.jpg" alt="" class="alignleft frame" width="188" /></span><br>&nbsp;<br>
-				 <h5>Speaker Bio</strong></h5>
-				 Chris Dede is a Senior Research Fellow at the Harvard Graduate School of Education and was for 22 years its Timothy E. Wirth Professor in Learning Technologies.  His fields of scholarship include emerging technologies, policy, and leadership.  He is a Co-Principal Investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education.
-                  <div class="separator small"></div>
-                 <h5><strong>Abstract</strong></h5>
-					<h6 class="morespace" style="text-align: justify;">We live at a time of rapid advances in both the capabilities and the cost of virtual reality (VR), multi-user virtual environments (MUVEs), and various forms of mixed reality (e.g., augmented reality (AR), digital puppeteering). These emerging media potentially offer extraordinary opportunities for enhancing both motivation and learning across a range of subject areas, student developmental levels, and educational settings. <br><br>
-                    Immersive media have affordances that enhance experiential learning based on a plan/act/reflect cycle. Psychological immersion is the mental state of being completely absorbed or engaged with something. For example, a well-designed game in a MUVE draws viewers into the metaverse portrayed on the screen, and they feel caught up in that virtual environment. The use of narrative and symbolism creates credible, engaging situations; each participant can influence what happens through their actions and can interact with others. Via richer stimuli, head-mounted or room-sized displays can create sensory immersion to deepen the effect of psychological immersion, as well as induce embodied virtual presence (place illusion), the feeling that you are at a location in the virtual world.<br><br>
-                    This talk will describe how the metaverse is powerful for “situated” learning: Experiences take place in the same or a similar virtual context to the real world setting in which skills and knowledge are later applied, and the virtual context itself fosters tacit learning through experience and modeling. However, learning in the metaverse faces challenges of simulator sickness, access by learners with limited vision, and limited bandwidth for non-verbal human interaction.
-                     </h6><div class="separator"></div>
+			<div id="content" class="withsidebar">
+				<div id="main">
+					<div id="maincontent">
+						<h4>Coming soon</h4>
+						<!-- <strong>
+							<h5 class="morespace"><a id="k1"></a>
+						</strong></h5>
+						<strong>
+							<h5 class="morespace">
+						</strong></h5>
+						<h4><strong>Keynote Speakers </strong></h4>
+						<div class="separator small"></div>
+						<div class="one_half firstcols">
+							<a href="#1"><img src="image/org/Prof_Tak-Wai_Chan.png" alt="" class="alignleft frame"
+									width="120" height="120" />
+								<div class="org-name">Professor Tak-Wai Chan</div>
+								<div class="org-uni">Chair Professor,<br> National Central University</div>
+							</a>
 
-				  <div class="clear"></div>
+						</div>
+						<div class="one_half lastcols">
+							<a href="#2"><img src="image/org/Dede.jpg" alt="" class="alignleft frame" width="120"
+									height="120" />
+								<div class="org-name">Professor Christopher Dede</div>
+								<div class="org-uni">Senior Research Fellow, <br>Graduate School of Education,<br>
+									Harvard University</div>
+							</a>
 
-				  <!-- clear float --> 
-				</div>
-				<!-- end #maincontent -->
+						</div>
+						<div class="separator small"></div>
+						<a id="1" name="1"></a>
+						<div class="separator line"></div>
+
+						<h3><strong>
+								<div style="color:purple">Speech Title: Invitation to Establish Seamless Interest-Driven
+									Creator Theory <br>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									—— questions and its implications to MetaACES research
+							</strong></h3>
+						<div class="separator small"></div>
+
+						<h5 class="one_third"><strong>Professor Tak-Wai Chan</strong></h5>
+						<p class="two_third lastcols">Chair Professor,<br> National Central University</p>
+						<h6 class="morespace" style="text-align: justify;"><strong><span class="tab-content"><img
+										src="image/org/Prof_Tak-Wai_Chan.png" alt="" class="alignleft frame"
+										width="188" /></span><br>&nbsp;<br>
+								<h5>Speaker Bio
+							</strong></h5>
+							Professor Tak-Wai Chan is a trailblazer in digital learning and a global leader in the
+							field. Almost 40 years ago, at a time when computers and the internet were not yet
+							mainstream in the mid-eighties, he began researching on AI supported learning for his
+							doctoral dissertation, proposing a new genus of AI in education system called learning
+							companion system in 1988. This virtual companion system, called Integration-Kid, was the
+							first artificial companion in the world. In 1989, he and his students started to build the
+							world's first dedicated networked learning system for collaborative learning and learning
+							through competition games, called Distributed West (1992). In early 2000s, he and his
+							colleagues built the largest online learning community called EduCity (1.5 million learners
+							with 1,700 schools involved in 2003), which was also referred as the first learning society
+							in the world. In the same time period, his team conducted frontier research on mobile
+							learning, intelligent classroom, future classroom, interactive clicker, e-schoolbag,
+							one-to-one technology enhanced learning, and so forth. After this series of research, in
+							2006, working together with a large group of international researchers mainly from the
+							Western countries, he proposed the concept of Seamless Learning. In 2010s, after some
+							long-term experiments on reading (MSSR) and writing in one-to-one technology enhanced
+							classroom, in collaboration with a group of Asian scholars, he proposed the Interest-Driven
+							Creator (IDC) Theory. Again, he is now calling for an international researcher team to build
+							the Seamless Interest-Driven Creator (SIDC) Theory.<br><br>
+							In addition to his research, Professor Chan has also been a major founder of two societies:
+							the Asia-Pacific Society for Computers in Education (APSCE) and the Global Chinese Society
+							for Computers in Education (GCSCE). These two societies respectively host annual conference
+							series ICCEs and GCCCEs, as well as the journals RPTEL and JLCE. Moreover, to cope with the
+							expanding research community of the field, he has been assisting the establishment of APSCE
+							Theme-Based International Conference Series (TBICS), including CTE-STEM, ICFULL,
+							MetaACES.<br><br>
+							Throughout his career, Professor Chan has received numerous recognitions and academic
+							awards, including the National Chair Professorship Award in 2020, the Executive Yuan Award
+							for Outstanding Science and Technology Contribution in 2019, the Fellow of APSCE in 2019,
+							the Academic Award of the Ministry of Education in 2013, the Pan Wen Yuan Foundation
+							Outstanding Research Award in 2009, and the Chinese Foundation Award from the National
+							Science Council in 2003. Besides being National Chair Professor, he has also held several
+							distinguished positions, including Chair Professor at NCU since 2008, Distinguished
+							Professor at NCU from 2004 to 2008, Excellent Appointed Researcher at the National Science
+							Council in 2008, and Appointed Researcher at the National Science Council from 2000 to 2007.
+							Additionally, he has received Excellent Research Awards from the National Science Council
+							for the years 1995-1996, 1997-1998, and 1999-2000.<br><br>
+							Throughout his career, Professor Chan has received numerous recognitions and academic
+							awards: the National Chair Professorship Award in 2020, the Executive Yuan Award for
+							Excellent Science and Technology Contribution in 2019, the Fellow of APSCE in 2019, the Pan
+							Wen Yuan Foundation Excellent Researcher Award in 2009, among others.
+							<div class="separator"></div> -->
+
+							<!-- <h5><strong>Abstract</strong></h5>
+							<h6 class="morespace" style="text-align: justify;">Human lifespan is extended, but COVID-19
+								global death toll has exceeded 8 million (Our World in Data, 2023); digitization enables
+								all of us to connect and communicate, but we constantly quarrel over different beliefs;
+								online games immerse players, but children's addiction may become a learning disaster;
+								artificial companions (such as chatbots and robots) can do various kinds of work for us,
+								but they also replace many of our jobs; the advent of metaverse may represent a bright
+								future world, but it may also signal a dark abyss to come; artificial intelligence can
+								improve human life in the future, but it can also do stupid things to human beings; we
+								cheer for technological progress, but we worry about climate change, natural resource
+								depletion, environmental pollution, wealth disparity and other problems.<br><br>
+								The world is on the brink of peril. Shall we live in harmony with the world around us?
+								What is the future of human wellbeing? What role can education play? Mandela said:
+								“Education is the most powerful weapon which you can use to change the world.” Education
+								is the hope of the future. The destiny of all human beings in the future is decided by
+								today's education. In 2040, in their 30s, the current primary and secondary school
+								students will be the pillars of our society. <br><br>
+								On the other hand, progress of digital technology, such as metaverse and artificial
+								companions, accelerates, with its impacts in the next 10 years several times as that of
+								last 10 years’. Designing future education is designing the future world.<br><br>
+								In 2006, 17 international researchers, mainly from Asia, Europe, and North America,
+								published a paper on the concept of seamless learning that holistically describes future
+								learning environment (Chan et al., 2006). Seamless learning is based on three other
+								concepts: (1) one-to-one (1:1) technology enhanced learning, (2) learning scenarios, and
+								(3) seamless learning space. Seamless learning spells out the continuality of learning
+								experience while students switching from one scenario to another easily and quickly.
+								Subsequently, the concept triggered abundant research (Looi et al., 2010; Wong & Looi,
+								2011).<br><br>
+								Starting from 2018, 12 years after the publication of seamless learning concept, 23
+								Asian researchers collaborated and published a series of papers on Interest-Driven
+								Creator Theory (IDC Theory) (Chan et al., 2018; Chan et al., 2019; Wong et al., 2020;
+								Chen et al., 2020). This effort stemmed from the fact that a considerable part of Asian
+								education remains examination-driven. The overemphasis on examination outcome distorts
+								the processes of learning and teaching, ruinate students’ interest in learning,
+								undermine the need of developing twenty-first century competencies, and fails to prepare
+								our next generation to face the future unpredictable world. Yet, high-stakes
+								examinations will not disappear in the foreseeable future. To lessen their drawbacks and
+								guide the design of future learning, IDC Theory is developed.<br><br>
+								Seamless learning speaks of future technology supported learning environment while IDC
+								Theory focuses on learning activity design. It is noticeable that integration of them
+								will simply form a theory about continuity of IDC-based learning in the future seamless
+								learning space, and we shall call this Seamless IDC Theory (or SIDC Theory).<br><br>
+
+								This talk intends to call for establishing SIDC Theory through collective endeavor by
+								interested researchers. Besides, this talk also raises questions to be considered in
+								building the theory:<br><br>
+								1. How to develop a broad framework of SIDC Theory that can capture critical elements of
+								the theory?<br><br>
+								2. Will there be extension of seamless learning per se as well as that of IDC Theory per
+								se in view of SIDC Theory and the digital future?<br><br>
+								3. What is the ‘global educational goal’ that educators around the world should strive
+								for? If so, will SIDC-based learning (or SIDC learning) contribute to the global
+								educational goal?<br><br>
+								4. In the ‘seamless world’ of the digital future, will there be SIDC work, SIDC family
+								life, SIDC entertainment, and so forth, besides SIDC learning? Or will there be SIDC
+								daily life?<br><br>
+								Besides, this talk will also discuss some implications of SIDC Theory to MetaACES
+								research.
+							</h6>
+							<div class="separator"></div> -->
+
+
+							<!-- <a id="2" name="2"></a>
+							<div class="separator line"></div>
+
+							<h3><strong>
+									<div style="color:purple">Speech Title: If the Metaverse is the Answer, What is the
+										Question?
+								</strong></h3>
+							<div class="separator small"></div>
+
+							<h5 class="one_third"><strong>Professor Christopher Dede</strong></h5>
+							<p class="two_third lastcols">Senior Research Fellow, <br>Graduate School of Education,<br>
+								Harvard University</p>
+							<h6 class="morespace" style="text-align: justify;"><strong><span class="tab-content"><img
+											src="image/org/Dede.jpg" alt="" class="alignleft frame"
+											width="188" /></span><br>&nbsp;<br>
+									<h5>Speaker Bio
+								</strong></h5>
+								Chris Dede is a Senior Research Fellow at the Harvard Graduate School of Education and
+								was for 22 years its Timothy E. Wirth Professor in Learning Technologies. His fields of
+								scholarship include emerging technologies, policy, and leadership. He is a Co-Principal
+								Investigator of the NSF-funded National Artificial Intelligence Institute in Adult
+								Learning and Online Education.
+								<div class="separator small"></div>
+								<h5><strong>Abstract</strong></h5>
+								<h6 class="morespace" style="text-align: justify;">We live at a time of rapid advances
+									in both the capabilities and the cost of virtual reality (VR), multi-user virtual
+									environments (MUVEs), and various forms of mixed reality (e.g., augmented reality
+									(AR), digital puppeteering). These emerging media potentially offer extraordinary
+									opportunities for enhancing both motivation and learning across a range of subject
+									areas, student developmental levels, and educational settings. <br><br>
+									Immersive media have affordances that enhance experiential learning based on a
+									plan/act/reflect cycle. Psychological immersion is the mental state of being
+									completely absorbed or engaged with something. For example, a well-designed game in
+									a MUVE draws viewers into the metaverse portrayed on the screen, and they feel
+									caught up in that virtual environment. The use of narrative and symbolism creates
+									credible, engaging situations; each participant can influence what happens through
+									their actions and can interact with others. Via richer stimuli, head-mounted or
+									room-sized displays can create sensory immersion to deepen the effect of
+									psychological immersion, as well as induce embodied virtual presence (place
+									illusion), the feeling that you are at a location in the virtual world.<br><br>
+									This talk will describe how the metaverse is powerful for “situated” learning:
+									Experiences take place in the same or a similar virtual context to the real world
+									setting in which skills and knowledge are later applied, and the virtual context
+									itself fosters tacit learning through experience and modeling. However, learning in
+									the metaverse faces challenges of simulator sickness, access by learners with
+									limited vision, and limited bandwidth for non-verbal human interaction.
+								</h6>-->
+								<div class="separator"></div> 
+
+								<div class="clear"></div>
+
+								<!-- clear float -->
+					</div>
+					<!-- end #maincontent -->
 					<div id="sidebar">
 						<ul>
 
-					<li class="widget-container">
-                    	 <h2 class="widget-title">Important dates</h2>
-                            <ul id="recentprojectwidget">
-                             <strong> <li><span class="colortext">Paper submission due</span><br/>
-                                <span class="date">February 4, 2024</span>
-                                <span class="clear"></span>
-                              </li>
-                              <li><span class="colortext">Review notification date</span><br/>
-                                <span class="date">April 28, 2024</span>
-                                <span class="clear"></span>
-                              </li>
-                              <li><span class="colortext">Camera-ready paper due</span><br/>
-                                <span class="date">May 12, 2024</span>
-                                <span class="clear"></span>
-                              </li>
-                              <li><span class="colortext">Registration due (Paper Authors)</span><br/>
-                                <span class="date">May 19, 2024</span>
-                                <span class="clear"></span>
-                              </li>
-                               <li><span class="colortext">Registration due (Non-Authors Participants)</span><br/>
-                                <span class="date">June 8, 2024</span>
-                                <span class="clear"></span>
-										</ul>
-									</strong></li>
-									
-									</ul>
+							<li class="widget-container">
+								<h2 class="widget-title">Important dates</h2>
+								<ul id="recentprojectwidget">
+									<strong>
+										<li><span class="colortext">Paper submission due</span><br />
+											<span class="date">February 4, 2024</span>
+											<span class="clear"></span>
+										</li>
+										<li><span class="colortext">Review notification date</span><br />
+											<span class="date">April 28, 2024</span>
+											<span class="clear"></span>
+										</li>
+										<li><span class="colortext">Camera-ready paper due</span><br />
+											<span class="date">May 12, 2024</span>
+											<span class="clear"></span>
+										</li>
+										<li><span class="colortext">Registration due (Paper Authors)</span><br />
+											<span class="date">May 19, 2024</span>
+											<span class="clear"></span>
+										</li>
+										<li><span class="colortext">Registration due (Non-Authors
+												Participants)</span><br />
+											<span class="date">June 8, 2024</span>
+											<span class="clear"></span>
+								</ul>
+								</strong>
+							</li>
+
+						</ul>
 					</div><!-- end #sidebar -->
-			
+
 					<div class="clear"></div><!-- clear float -->
 				</div><!-- end #main -->
 			</div><!-- end #content -->
-			
-		<div id="footer">
-        <div id="footer-pattern">
-        
-			<div class="container940">
-            	<div id="footcol1">
-                	<ul>
-                    	<li class="widget-container">
-                            <h2 class="widget-title">Latest Articles</h2>
-                            <ul id="recentpostwidget">
-                                <li>
-                                    <img src="images/content/pic5.jpg" alt="" class="alignleft frame" />
-                                    <h5><a href="#">Hello World!!</a></h5>
-                                    <span>Lorem ipsum dolor sit amet...</span>
-                                </li>
-                                <li>
-                                    <img src="images/content/pic6.jpg" alt="" class="alignleft frame" />
-                                    <h5><a href="#">Hello World!!</a></h5>
-                                    <span>Lorem ipsum dolor sit amet...</span>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footcol2">
-                	<ul>
-                        <li class="widget-container">
-                        	<h2 class="widget-title">Blogroll</h2>
-                            <ul>
-                            	<li><a href="#">Vivamus hendrerit venenatis quam</a></li>
-                                <li><a href="#">Aenean congue nisl in nibh</a></li>
-                                <li><a href="#">Proin tempus tempus orci eu imperdiet</a></li>
-                                <li><a href="#">Mauris interdum</a></li>
-                                <li><a href="#">Donec id turpis at risus</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footcol3">
-                	<ul>
-                        <li class="widget-container">
-                        	<h2 class="widget-title">Gallery</h2>
-                            <ul id="flickr">
-                            	<li><a href="#"><img src="images/content/pic7.jpg" alt="" class="frame" /></a></li>
-                                <li><a href="#"><img src="images/content/pic8.jpg" alt="" class="frame" /></a></li>
-                                <li class="nomargin"><a href="#"><img src="images/content/pic9.jpg" alt="" class="frame" /></a></li>
-                                <li><a href="#"><img src="images/content/pic10.jpg" alt="" class="frame" /></a></li>
-                                <li><a href="#"><img src="images/content/pic11.jpg" alt="" class="frame" /></a></li>
-                                <li class="nomargin"><a href="#"><img src="images/content/pic12.jpg" alt="" class="frame" /></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footcol4">
-                	<ul>
-                        <li class="widget-container">
-                        	<h2 class="widget-title">About Magnum</h2>
-                            <div class="textwidget">
-                            <p>
-                            Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et imperdiet odio magna lobortis purus. 
-                            </p>
-                            <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui. </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-           
-            <div class="clear"></div><!-- clear float -->
-            </div><!-- end container940 -->
-            
-        </div><!-- end #footer-pattern -->  
-		</div><!-- end #footer -->
-        
-        <div id="after-footer">
-          <div class="container940">
-			<div id="sn">
-			  <ul>
-            <!--li><a href="#">繁</a></li>
+
+			<div id="footer">
+				<div id="footer-pattern">
+
+					<div class="container940">
+						<div id="footcol1">
+							<ul>
+								<li class="widget-container">
+									<h2 class="widget-title">Latest Articles</h2>
+									<ul id="recentpostwidget">
+										<li>
+											<img src="images/content/pic5.jpg" alt="" class="alignleft frame" />
+											<h5><a href="#">Hello World!!</a></h5>
+											<span>Lorem ipsum dolor sit amet...</span>
+										</li>
+										<li>
+											<img src="images/content/pic6.jpg" alt="" class="alignleft frame" />
+											<h5><a href="#">Hello World!!</a></h5>
+											<span>Lorem ipsum dolor sit amet...</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="footcol2">
+							<ul>
+								<li class="widget-container">
+									<h2 class="widget-title">Blogroll</h2>
+									<ul>
+										<li><a href="#">Vivamus hendrerit venenatis quam</a></li>
+										<li><a href="#">Aenean congue nisl in nibh</a></li>
+										<li><a href="#">Proin tempus tempus orci eu imperdiet</a></li>
+										<li><a href="#">Mauris interdum</a></li>
+										<li><a href="#">Donec id turpis at risus</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="footcol3">
+							<ul>
+								<li class="widget-container">
+									<h2 class="widget-title">Gallery</h2>
+									<ul id="flickr">
+										<li><a href="#"><img src="images/content/pic7.jpg" alt="" class="frame" /></a>
+										</li>
+										<li><a href="#"><img src="images/content/pic8.jpg" alt="" class="frame" /></a>
+										</li>
+										<li class="nomargin"><a href="#"><img src="images/content/pic9.jpg" alt=""
+													class="frame" /></a></li>
+										<li><a href="#"><img src="images/content/pic10.jpg" alt="" class="frame" /></a>
+										</li>
+										<li><a href="#"><img src="images/content/pic11.jpg" alt="" class="frame" /></a>
+										</li>
+										<li class="nomargin"><a href="#"><img src="images/content/pic12.jpg" alt=""
+													class="frame" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="footcol4">
+							<ul>
+								<li class="widget-container">
+									<h2 class="widget-title">About Magnum</h2>
+									<div class="textwidget">
+										<p>
+											Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et
+											imperdiet odio magna lobortis purus.
+										</p>
+										<span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+											cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui.
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="clear"></div><!-- clear float -->
+					</div><!-- end container940 -->
+
+				</div><!-- end #footer-pattern -->
+			</div><!-- end #footer -->
+
+			<div id="after-footer">
+				<div class="container940">
+					<div id="sn">
+						<ul>
+							<!--li><a href="#">繁</a></li>
             <li> I </li>
             <li><a href="#">簡 </a></li-->
-			  </ul>
+						</ul>
+					</div>
+					<h4 div id="footertext"> Contact us: <a
+							href="mailto:MetaACES2024@gmail.com">MetaACES2024@gmail.com</a> </h4>
+				</div>
+				<div class="clear"></div>
+				<!-- clear float -->
 			</div>
-			<h4 div id="footertext"> Contact us: <a href="mailto:MetaACES2024@gmail.com">MetaACES2024@gmail.com</a> </h4></div>
-			<div class="clear"></div>
-			<!-- clear float --> 
-		  </div>
-		  <!-- end container940 --> 
+			<!-- end container940 -->
 		</div>
-		<!-- end #after-footer --> 
-		
-	  </div>
-	  <!-- end #container --> 
+		<!-- end #after-footer -->
+
+	</div>
+	<!-- end #container -->
 	</div>
 	<!-- end #outer-container -->
 
 </body>
+
 </html>
