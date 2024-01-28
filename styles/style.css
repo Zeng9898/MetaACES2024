@@ -1616,3 +1616,7 @@ tr.odd td {
 	float: left;
 	margin-left: 8px;
 }
+
+.grid-container {
+	grid-auto-rows: minmax(200px, auto);
+}
