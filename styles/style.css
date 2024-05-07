@@ -1620,3 +1620,7 @@ tr.odd td {
 .grid-container {
 	grid-auto-rows: minmax(200px, auto);
 }
+
+.enlarged-text {
+	font-size: 1.2em; /* 增加字體大小 */
+  }
