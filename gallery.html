@@ -13,20 +13,19 @@
   <!-- ////////////////////////////////// -->
   <link href="styles/style.css" rel="stylesheet" type="text/css" />
   <link href="styles/inner.css" rel="stylesheet" type="text/css" />
-  <link href="styles/map.css" rel="stylesheet" type="text/css" />
+  <link href="styles/lightbox.css" rel="stylesheet" type="text/css" /> <!-- 引入lightbox的CSS -->
   <!--[if lt IE 9]>
 <link href="styles/ie8.css" rel="stylesheet" type="text/css" />
 <![endif]-->
   <!-- ////////////////////////////////// -->
   <!-- //      Javascript Files        // -->
   <!-- ////////////////////////////////// -->
-  <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="js/hoverIntent.js"></script>
   <script type="text/javascript" src="js/superfish.js"></script>
   <script type="text/javascript" src="js/supersubs.js"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script type="text/javascript">
 
+  <script type="text/javascript">
     jQuery(document).ready(function () {
       //Menu
       jQuery("ul.sf-menu").supersubs({
@@ -40,6 +39,16 @@
 
     });
   </script>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .gallery a {
+      margin: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -107,26 +116,10 @@
 
       <div id="content">
         <div id="main">
-          <div id="maincontent">
-            <h3> Accommodation </h3>
-            <div id="map"></div>
-            <!-- <img src="image/Hotel map.png" width="120%" alt="" /><br> -->
-            <!-- <t2><a href="https://zhongli.hubhotel.com.tw/" target="_blank">Hub Hotel</a></t2><br> -->
-            <t2><a href="https://www.hotelin.com.tw/?lang=en" target="_blank">Hotel IN</a></t2><span> (2.4
-              km)</span><br>
-            <!-- <t2><a href="http://taoyuan.hotel-j.com.tw/en/" target="_blank">Hotel-J-Taoyuan</a></t2><br> -->
-            <t2><a href="https://www.kuva-chateau.com.tw/" target="_blank">Hotel Kuva Chateau</a><span> (3.1 km)</span>
-            </t2><br>
-            <t2><a href="https://www.kingsparadise.com/web/main_en" target="_blank">King's Paradise Hotel</a><span> (3.6
-                km)</span></t2><br>
-            <t2><a href="https://jungli.lemidi-hotel.com.tw/en/" target="_blank">Le Midi Hotel</a><span> (3.3 km)</span>
-            </t2><br>
-            <t2><a href="https://www.fullon-hotels.com.tw/jl/en/" target="_blank">Fullon Hotel Jhongli</a><span> (3.7
-                km)</span></t2><br>
-            <t2><a href="http://www.hotelmu.com.tw/" target="_blank">Hotel MU</a><span> (3.3 km)</span></t2><br>
-            <t2><a href="https://www.alfar.com.tw/" target="_blank">Alfar Hotel</a><span> (8.3 km)</span></t2><br>
-            <t2><a href="https://hotelcozzi.com/en/cozzi-blu/" target="_blank">HOTEL COZZI</a><span> (7.7 km)</span>
-            </t2>
+          <div style="float: left; padding-right: 25px;">
+            <h1>photo gallery</h1>
+            <h1><a href="https://drive.google.com/drive/folders/1SCZYkCq4Apj53QxX0tfKejnUeMHnGIna?usp=sharing">Day 1</a></h1>
+            <!-- <div class="gallery" id="gallery"></div> -->
           </div>
           <div class="clear"></div>
           <!-- clear float -->
@@ -158,8 +151,23 @@
     <!-- end #container -->
   </div>
   <!-- end #outer-container -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFVx3PgyyJWIQIMi5bOF19Gz4OkQNuVpk&libraries=places&callback=initMap&v=weekly"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script> <!-- 引入lightbox的JS -->
+  <script>
+    const gallery = document.getElementById('gallery');
+    for (let i = 1; i <= 100; i++) {
+      const anchor = document.createElement('a');
+      anchor.href = `image/gallery/photo${i}.JPG`;
+      anchor.dataset.lightbox = 'conference-photos';
+      anchor.dataset.title = `Photo ${i}`;
+
+      const img = document.createElement('img');
+      img.src = `image/gallery/photo${i}.JPG`;
+      img.height = 100;
+
+      anchor.appendChild(img);
+      gallery.appendChild(anchor);
+    }
+  </script>
 </body>
 
 </html>
